@@ -1,0 +1,23 @@
+p{
+    font-size:15px ;
+    color: white;
+    text-align:center; 
+    
+}
+h1{
+   color: white;
+   face: arial;
+    text-align:center;  
+}
+input{
+    background-color:#b0e2ff;
+}
+select{
+     background-color:#ffc1c1;
+}
+input.vermelha{
+   background-color:#ffc1c1;
+}
+textarea{
+  background-color:#b0e2ff;  
+}
