@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1560798590 source:c:\users\joao marcos\desktop\jmls\main.cpp
+	<iostream>
+	<stdlib.h>
+
