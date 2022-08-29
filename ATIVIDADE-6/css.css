@@ -1,0 +1,25 @@
+p{
+    font-size:20px ;
+    color: red;
+    border: 2px solid blue;
+    text-align:right;
+    background-color:  #ff0;    
+}
+h2.segunda{
+    background-color:blue;
+    color:#ffffff;
+}  
+
+div.outra{
+    background-color:blue;
+    color: #ffffff;
+}
+.destaque{
+    font-size: 50px  ;
+    border: solid black 3px ;
+}
+#especial{
+    font-size:25px;
+    color: blue;
+    text-align: center;
+}
