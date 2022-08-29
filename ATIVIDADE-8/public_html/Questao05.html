@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+            function calculo() {
+                n1 = parseFloat(document.getElementById("texto1").value);
+                n2 = parseFloat(document.getElementById("texto2").value);
+                n3 = parseFloat(document.getElementById("texto3").value);
+                n4 = parseFloat(document.getElementById("texto4").value);
+                var c1 = (n1 * 0.13) + n1;
+                var c2 = (n2 * 0.08) - n2;
+                var c3 = (n3 * 0.55) + n3;
+                var c4 = (n4 * 0.60) - n4;
+                document.getElementById("numero1").innerHTML = c1;
+                document.getElementById("numero2").innerHTML = c2;
+                document.getElementById("numero3").innerHTML = c3;
+                document.getElementById("numero4").innerHTML = c4;
+            }
+        </script>
+
+    </head>
+    <body>
+        <form>
+            <h1>Cálculo dos Números</h1>
+            Números 01: <input type="text" id="texto1"> +13%<br><br>
+            Números 02: <input type="text" id="texto2"> -08%<br><br>
+            Números 03: <input type="text" id="texto3"> +55%<br><br>
+            Números 04: <input type="text" id="texto4"> -60%<br><br>
+            <input type="button" value="Calculo" onclick="calculo();" />
+            <table>
+                <tr>
+                    <td> Numero 1: </td>
+                    <td><p id="numero1"></p></td>
+                   
+                    <td> Numero 2: </td>
+                    <td><p id="numero2"></p></td>
+                       
+                    <td> Numero 3:  </td>
+                    <td><p id="numero3"></p></td>
+                       
+                    <td> Numero 4:  </td>  
+                    <td><p id="numero4"></p></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

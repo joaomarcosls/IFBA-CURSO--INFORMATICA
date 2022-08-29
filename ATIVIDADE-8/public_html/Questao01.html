@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script>
+            function calculo() {
+                n1 =document.getElementById("campo1").value;
+                n2 = document.getElementById("campo2").value;
+                n3 = parseFloat(document.getElementById("campo3").value);
+                n4 = parseFloat(document.getElementById("campo4").value);
+                var calculo;
+                calculo = n4/(n3*n3);
+                document.getElementById("numero1").innerHTML = n1;
+                document.getElementById("numero2").innerHTML = n2;
+                document.getElementById("numero3").innerHTML = calculo;
+                
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <h1>Cálculo dos Números</h1>
+            Nome: <input type="text" id="campo1"> <br><br>
+            Ano de nascimento: <input type="text" id="campo2"> <br><br>
+            Altura: <input type="text" id="campo3"> <br><br>
+            Peso: <input type="text" id="campo4"> <br><br>
+            <input type="button" value="Calculo" onclick="calculo();" />
+            <table>
+                <tr>
+                    <td> Nome : </td>
+                    <td><p id="numero1"></p></td>
+                   
+                    <td> Idade: </td>
+                    <td><p id="numero2"></p></td>
+                       
+                    <td> IMC:  </td>
+                    <td><p id="numero3"></p></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
